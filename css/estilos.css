@@ -35,6 +35,9 @@ h6 {
 img {
   width: 100%;
 }
+figure {
+  margin: 0;
+}
 .container {
   margin: 10px auto;
   border: 2px solid #F2F2F2;
@@ -44,6 +47,7 @@ img {
 .section {
   margin: 20px auto;
   width: 90%;
+
 }
 a {
   text-decoration: none
@@ -54,6 +58,13 @@ a {
   border-radius: 50px;
   color: #026FFF;
   font-weight: bold;
+  margin-bottom: 0px;
+}
+.button:hover {
+  background-color: #0060dd;
+  cursor: pointer;
+  transition: 0.1s ease all;
+  color: #ffffff;
 }
 /*HEADER*/
 header {
@@ -98,9 +109,10 @@ header nav ul li .link{
   .project-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
-  .container-image .image{
-    width: 400px;
+  .project-container .detalles-project{
+    flex: 0 0 50%;
   }
 }
 .project .project-container .detalles-project small {
@@ -117,6 +129,9 @@ header nav ul li .link{
   
 }
 /*Collage*/
+.collage {
+  margin-bottom: 0;
+}
 .collage-container-image {
   position: relative;
 }
@@ -133,22 +148,76 @@ header nav ul li .link{
 /*Contact*/
 .contact {
   background-color: #0370FF;
+  border-radius: 0;
+  margin-bottom: 0;
+  border: none;
+}
+.content-contact {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .content-contact {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 .form h2 {
   color: #ffffff;
+  margin: 0 auto;
 }
 .form label {
   color: #ffffff;
+  display: block;
 }
 .form input {
   margin-bottom: 20px;
   border-radius: 6px;
   padding: 10px 40px;
-  border: 1px solid #6D6D6D;
+  border: 1px solid #ffffff;
+  display: inline-block;
 }
 .button-form {
-  display: block;
   background-color: #0370FF;
   color: #ffffff;
-  border: 2px solid #ffffff;
+  display: block;
+}
+/*iconos*/
+.nets {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px
+}
+@media (min-width: 768px) {
+  .nets {
+    width: 50%;
+  }
+}
+.icon {
+  font-size: 2em;
+  color: #ffffff;
+}
+/*Footer*/
+.footer {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1D252C;
+  align-items: center;
+  padding: 20px;
+}
+.footer .content-footer {
+  display: flex;
+  align-items: center;
+}
+.footer p {
+  margin: 0;
+  align-items: center;
+}
+.footer p span {
+  font-weight: bold;
+}
+.footer  img {
+  width: 100px;
 }
