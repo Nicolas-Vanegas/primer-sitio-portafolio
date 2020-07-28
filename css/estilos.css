@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+  background-color: #FAFAFA;
+}
+/*Globales*/
+h1 {
+  font-size: 2.4vw;
+  line-height: 1.5em;
+  color: #ffffff;
+}
+h2 {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  color: #026FFF;
+  margin: 50px 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  h2 {
+    text-align: left;
+    padding: 30px;
+  }
+}
+h3 {
+  font-size: 1.7em;
+  margin: 20px 0;
+}
+h6 {
+  font-size: 1em;
+  color: #6D6D6D;
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+.container {
+  margin: 10px auto;
+  border: 2px solid #F2F2F2;
+  padding: 30px;
+  border-radius: 10px;
+}
+.section {
+  margin: 20px auto;
+  width: 90%;
+}
+a {
+  text-decoration: none
+}
+.button {
+  padding: 10px 40px;
+  border: 2px solid #0370FF;
+  border-radius: 50px;
+  color: #026FFF;
+  font-weight: bold;
+}
+/*HEADER*/
+header {
+  background-color: #1D252C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header nav ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+header nav ul li .link{
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 40px;
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+/*HERO*/
+.hero div {
+  width: 50%;
+}
+.hero .div-uno h1 {
+  background-color: #1D252C;
+  padding:  15px;
+  margin: 0;
+}
+.hero .div-uno h1 strong{
+  color: #026FFF;
+}
+.hero div img {
+  width: 100%;
+}
+/*portafolio*/
+@media (min-width: 768px) {
+  .project-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container-image .image{
+    width: 400px;
+  }
+}
+.project .project-container .detalles-project small {
+  color: #6D6D6D;
+  font-weight: bold;
+}
+.project .project-container .detalles-project .project-description {
+  font-weight: 700;
+  margin-top: 30px;
+}
+/*Experiencia*/
+.event .event-container-img {
+  width: 100%;
+  
+}
+/*Collage*/
+.collage-container-image {
+  position: relative;
+}
+.collage-button {
+  background-color: #0370FF;
+  color: #ffffff;
+  position: absolute;
+}
+.container-buttons {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+}
+/*Contact*/
+.contact {
+  background-color: #0370FF;
+}
+.form h2 {
+  color: #ffffff;
+}
+.form label {
+  color: #ffffff;
+}
+.form input {
+  margin-bottom: 20px;
+  border-radius: 6px;
+  padding: 10px 40px;
+  border: 1px solid #6D6D6D;
+}
+.button-form {
+  display: block;
+  background-color: #0370FF;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
