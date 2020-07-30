@@ -281,3 +281,11 @@ header nav ul li a {
 .footer  img {
   width: 100px;
 }
+.envoltura {
+  display: flex;
+  flex-direction: column;
+  vertical-align: center;
+}
+.sisas {
+  height: 200px;
+}
