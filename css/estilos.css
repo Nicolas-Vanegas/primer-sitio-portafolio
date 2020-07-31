@@ -6,7 +6,7 @@ body {
 }
 /*Globales*/
 h1 {
-  font-size: 3.8vw;
+  font: 25px;
   line-height: 1.5em;
   color: #ffffff;
 }
@@ -106,18 +106,31 @@ header nav ul li a {
 }
 /*HERO*/
 .hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: #1D252C;
-  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
 }
-.hero img {
-  width: 50%;
+@media (min-width: 768px) {
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-direction: row;
+  }
+  .hero img {
+    width: 50%;
+  }
+  .hero .div-uno h1 {
+    font-size: 3.8vw;
+  }
+}
+.hero .div-uno {
+  margin: 0 auto;
+  text-align: center;
 }
 .hero .div-uno h1 {
   padding: 0 0 0 15px;
-  margin: 0;
 }
 .hero .div-uno h1 strong{
   color: #026FFF;
