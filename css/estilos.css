@@ -85,21 +85,32 @@ main {
 }
 /*Hero*/
 .hero {
-  height: 300px;
   background-color: #1b2127;
+  height: 400PX;
+}
+.wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: inherit;
+  max-width: 1200px;
 }
 .hero-image {
   object-fit: cover;
 }
+h1 {
+  padding-left: 20px;
+}
 h1 strong {
   color: #026fff;
 }
-.container-image {
-  width: 500px;
+.wrapper div {
+  height: inherit;
 }
+.wrapper div img {
+  height: inherit;
+}
+/*Main*/
 .portfolio {
   background: #fafafa;
   padding: 20px;
@@ -225,4 +236,10 @@ footer {
   color:white;
   margin-top: 10px;
   border: 1px solid white;
+}
+/*Media Query*/
+@media screen and (max-width: 768px) {
+  body {
+    border: 10px solid green;
+  }
 }
