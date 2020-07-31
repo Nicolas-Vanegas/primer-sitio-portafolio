@@ -1,7 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0 auto;
-  width: 1200px;
 }
 h1,
 h2,
@@ -80,6 +79,10 @@ figure {
   align-items: center;
   padding: 0 10px;
 }
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 /*Hero*/
 .hero {
   height: 300px;
@@ -128,7 +131,10 @@ h1 strong {
   font-size: 20px;
 }
 /*Footer*/
-.footer {
+footer {
+  width: 100%;
+}
+.container-footer {
   display: flex;
   justify-content: space-between;
   background-color: #1b2127;
@@ -181,12 +187,18 @@ h1 strong {
 }
 /*Contact*/
 .contact {
+  height: 200px;
   background-color: #026fff;
   color: white;
-  height: 150px;
+}
+.container-contact {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 50px;
+  height: inherit;
 }
 .contact h2 {
   color: white;
