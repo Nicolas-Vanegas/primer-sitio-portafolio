@@ -28,14 +28,19 @@
         </ul>
       </nav>
     </header><!--header-->
+    <div class="burger-menu">
+      <i class="fas fa-bars"></i>
+    </div>
     <section class="hero">
-			<div class="div-uno">
-				<h1>
-					Hola! Soy <strong>leonidas Esteban</strong> <br> Desarrollador <strong>Javascript</strong> con <br> pasión por la <strong>enseñanza</strong>
-				</h1>
-			</div>
-			<img src="images/hero.jpg" alt="Hero" >
-		</section><!--Hero-->
+      <div class="seccion">
+        <div class="div-uno">
+          <h1>
+            Hola! Soy <strong>leonidas Esteban</strong> <br> Desarrollador <strong>Javascript</strong> con <br> pasión por la <strong>enseñanza</strong>
+          </h1>
+        </div>
+        <img src="images/hero.jpg" alt="Hero" >
+      </div>
+    </section><!--Hero-->
     <section class="portfolio section" id="portalofio">
 			<h2>
 				Portafolio (proyectos destacados)
@@ -105,8 +110,10 @@
 					</div><!--event-content-->
 				</article><!--event-->
 				<article class="event container">
-					<img class="event-image" src="images/platzi-conf.jpg" alt="platzi">
-					<div class="event-content">
+          <div class="flex-video">
+            <iframe class="youtube-video" src="https://www.youtube.com/embed/LoKvxCSZw5w"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="event-content">
 						<h3>Segundo lugar master frontend</h3>
 						<p>
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam commodi assumenda sit? Hic cumque, veniam aliquid rerum temporibus sunt officia odio eum nam, cupiditate quas!
@@ -115,7 +122,7 @@
 					</div><!--event-content-->
 				</article><!--event-->
 				<article class="event container">
-					<img class="event-image" src="images/platzi-conf.jpg" alt="sias">
+					<video class="html-video" src="videos/Facebook developer conference F8 2018 - vlog.mp4" controls poster="images/platzi-video-react-native.png"></video>
 					<div class="event-content">
 						<h3>PlatziConf México 2018</h3>
 						<p>

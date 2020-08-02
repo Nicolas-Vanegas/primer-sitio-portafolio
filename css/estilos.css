@@ -17,7 +17,7 @@ h2 {
   margin: 50px 0;
   text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   h2 {
     text-align: left;
     padding: 30px;
@@ -66,11 +66,36 @@ a {
   transition: 0.1s ease all;
   color: #ffffff;
 }
+/*MENU DE HAMBURGUESA*/
+.burger-menu {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  background-color: #000000;
+  border-radius: 50%;
+  z-index: 3;
+  left: 10px;
+}
+@media (min-width: 769px) {
+  .burger-menu {
+    display: none;
+  }
+}
+@media (min-width: 380px) {
+  .burger-menu {
+    top: 15px;
+    left: 10px;
+  }
+}
 /*HEADER*/
 header {
   background-color: #1D252C;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   header {
     display: flex;
     justify-content: space-around;
@@ -80,27 +105,39 @@ header {
 header img {
   display: block;
   margin: 0 auto;
-  width: auto;
+  width: 250px;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   header img {
     margin: 0;
+    width: auto;
   }
 }
 header nav ul{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  list-style: none;
-  justify-content: center;
-  padding: 10px;
-  margin: 0;
+  display: none;
+}
+@media (min-width: 481px) {
+  header nav {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  header nav {
+    display: flex;
+  }
 }
 header nav ul li {
   margin-bottom: 15px;
 }
-@media (min-width: 480px) {
+@media (min-width: 481px) {
   header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    padding: 10px;
+    margin: 0;
     flex-direction: row;
   }
   header nav ul li {
@@ -117,36 +154,60 @@ header nav ul li a {
 /*HERO*/
 .hero {
   background-color: #1D252C;
-  display: flex;
-  flex-direction: column-reverse;
 }
-@media (min-width: 768px) {
-  .hero {
+.seccion {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.seccion img{
+ position: relative;
+}
+@media (min-width: 769px) {
+  .seccion {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     flex-direction: row;
+    background-color: #1D252C;
+    height: 400px;
   }
-  .hero img {
+  .seccion img {
     width: 50%;
+    height: 100%;
+    right: 0;
+    position: absolute;
   }
-  .hero .div-uno h1 {
-    font-size: 3.8vw;
+  .seccion .div-uno {
+    width: 50%;
+    position: absolute;
+  }
+  .seccion .div-uno h1 {
+    font-size: 2.5em;
   }
 }
-.hero .div-uno {
+@media screen and (max-width: 371px) {
+  .seccion .div-uno h1 {
+    font-size: 1.5em;
+  }
+}
+.seccion .div-uno {
   margin: 0 auto;
   text-align: center;
+  position: absolute;
+  z-index: 1;
 }
-.hero .div-uno h1 {
-  padding: 0 0 0 15px;
+.seccion .div-uno h1 {
+  padding: 15px;
 }
-.hero .div-uno h1 strong{
+.seccion .div-uno h1 strong{
   color: #026FFF;
 }
 /*portafolio*/
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .project-container {
     display: flex;
     justify-content: space-between;
@@ -181,7 +242,29 @@ header nav ul li a {
 .event .event-image {
   border-radius: 10px;
 }
-@media (min-width: 768px) {
+.event .html-video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.event .youtube-video {
+  border-radius: 10px;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.event .flex-video {/*Todo esto, la creación de esto se hace para que el video traído con el iframe sea responsive */
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  position: relative;
+}
+@media (min-width: 769px) {
   .wrapper-experiencia {
     display: flex;
     flex-wrap: wrap;
@@ -227,7 +310,7 @@ header nav ul li a {
   border: none;
   padding: 30px
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .contact {
     padding: 20px 120px;
   }
@@ -235,7 +318,7 @@ header nav ul li a {
 .content-contact {
   text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .content-contact {
     text-align: left;
     display: flex;
@@ -269,7 +352,7 @@ header nav ul li a {
   justify-content: space-between;
   margin-top: 30px
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .nets {
     width: 50%;
   }
@@ -285,7 +368,7 @@ header nav ul li a {
   padding: 20px;
   text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .footer {
     display: flex;
     justify-content: space-between;
